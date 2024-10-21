@@ -9,9 +9,11 @@ export default function Countries() {
   }, []);
   return (
     <>
-      {countries.map((country) => (
-        <Country key={country.cca3} country={country} />
-      ))}
+      <div className="grid-view">
+        {countries.map((country) => (
+          <Country key={country.cca3} country={country} />
+        ))}
+      </div>
     </>
   );
 }
